@@ -1,9 +1,175 @@
+<!DOCTYPE html>
 <html>
- 
   <body>
-    <h1>Ele.Zvereva</h1>
-    <p>Welcome to my website!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+    <head>
+      <title>Night Flight</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./source/css/styles.css">
+    </head>
+    <main role="presentation">
+      <section class="intro">
+        <div class="intro-heading-container">
+          <img role="none" class="intro-logo" src="./source/images/temp-logo2.svg" alt="The Night Flight logo">
+          <h1 class="intro-heading">Night Flight Club</h1>
+          <img role="none" class="intro-logo" src="./source/images/temp-logo2.svg" alt="The Night Flight logo">
+        </div>
+        <p class="intro-moto">Don't be left out! Join our crowd!</p>
+      </section>
+      <section class="bats-gallery">
+        <div class="bats-gallery-container" aria-label="Our members">
+          <div class="bats-gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/caren-bat-1.jpg" alt="Caren">
+          </div>
+          <div class="bats-gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/billy-bat-2.jpg" alt="Billy">
+          </div>
+          <div class="bats-gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/nadine-bat-3.jpg" alt="Nadine">
+          </div>
+          <div class="bats-gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/creg-bat-4.jpg" alt="Creg">
+          </div>
+          <div class="bats-gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/kate-bat-5.jpg" alt="Kate">
+          </div>
+          <div class="bats-gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/michael-bat-6.jpg" alt="Michael">
+          </div>
+          <div class="bats-gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/natalie-bat-7.jpg" alt="Natalie">
+          </div>
+        </div>
+        <p class="bats-gallery-text">Just to name a few!</p>
+      </section>
+      <section class="description" aria-label="What is Night Flight?">
+        <h2 role="none" class="description-heading">Night Flight is a community of Sydney vampires who are sick of staying all creepy and lonely.</h2>
+        <div class="description-text">
+          <p>We transform into bats and fly under the stars<br>two or three times per month.</p>
+          <p>Enjoy the freedom and the fellowship.</p>
+          <p>Feel the respect. Feel the support.</p>
+        </div>
+      </section>
+      <section id="signup" class="event">
+        <div class="event-container">
+          <h2 class="event-heading">Join our next flight!</h2>
+          <div class="event-content">
+            <div class="event-description">
+              <p>Sunday, October, 2 23:30</p>
+              <p>Harbour National Park, at the Horny Lighthouse</p>
+            </div>
+            <div class="event-signup">
+              <!-- Event Form -->
+              <div aria-hidden="false" id="js-signup-group" class="event-dynamic-container" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
+                <form class="event-form" action="">
+                  <div class="event-fields">
+                    <div class="event-fixedHeight">
+                      <div class="event-inputGroup">
+                        <label for="name">How We Call You</label>
+                        <input aria-label="Enter you name" id="name" name="name" type="text">
+                      </div>
+                      <div class="event-inputGroup">
+                        <label for="email">Your Email</label>
+                        <input aria-label="Enter you Email" id="email" name="email" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <button aria-label="submit button" id="js-submitButton" class="event-button">Count me in!</button>
+                </form>
+                <p role="none" class="event-signup-text">We need to know the participants so no one is left behind.</p>
+              </div>
+              <!-- Event Success Message -->
+              <div aria-hidden="true" id="js-success-group" class="event-dynamic-container event-success hidden">
+                <div class="event-fixedHeight">
+                  <p>You've been added! Check up your email!</p>
+                </div>
+                <button id="js-backButton" class="event-button">Go Back</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2 class="gallery-heading">Look! What a View!</h2>
+        <div class="gallery-container" aria-label="Views of Sydney at night">
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-1.jpg" alt="Skyscrapers at night">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-2.jpg" alt="Ferris wheel and the park">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-3.jpg" alt="Bridge seen from the water">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-4.jpg" alt="Night city">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-5.jpg" alt="Tram at night">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-6.jpg" alt="Sydney Opera House and Sydney Harbour from distance">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-7.jpg" alt="Sydney Buildings silhouette at the dusk">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-8.jpg" alt="Sydney Harbour Bridge in lights">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-9.jpg" alt="Sydney Opera House">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-10.jpg" alt="Sydney Harbour Bridge from below">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-11.jpg" alt="Sydney Opera House">
+          </div>
+          <div class="gallery-item illustration-container">
+            <img class="illustration-item" src="./source/images/sydney-view-12.jpg" alt="Sydney Opera House with projected ornaments on it">
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top-section">
+        <section class="cta">
+          <a aria-label="Go to the signup form" class="cta-link" href="#signup">Join the Flock!</a>
+        </section>
+      </div>
+      <div class="footer-bottom-section">
+        <section aria-label="Links to photos used on this website" class="footer-credit-container">
+          <h3 role="none" class="footer-credit-heading">Photo Credit</h3>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/fC2bnCRAvvY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Caren</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/Z00K8iSWpNc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Skyscrapers at night</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/fgy7tXxfqhE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Ferris wheel and the park</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/vAAuJAsm59A?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Bridge seen from the water</a>  
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/YoEMMc-fnCs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Night city</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/8H0A2BVdRJM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Tram at night</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/jJF-zlkXTmU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House and Sydney Harbour from distance</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/_l0tBaVBx1g?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Buildings silhouette at the dusk</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/ZsH1wHv2iTU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Harbour Bridge in lights</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/RK5gtzZawSc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/FUh6nK3s0po?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Harbour Bridge from below</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link"href="https://unsplash.com/photos/einIuvtZen4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/Ev7rewOS5vo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House with projected ornaments on it</a>
+        </section>
+      </div>
+    </footer>
+    <script src="./source/js/script.js"></script>
   </body>
- 
 </html>
