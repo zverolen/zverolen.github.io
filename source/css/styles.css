@@ -908,7 +908,7 @@ li {
 
 .event-signup input:focus {
   border-radius: 0;
-  outline-offset: 4px;
+  outline-offset: 1px;
 }
 
 .event-signup-text {
