@@ -818,7 +818,7 @@ li {
 /* @media only screen and (max-width: 350px) { */
 @media only screen and (max-width: 460px) {
   .event-fixedHeight {
-    height: 122px;
+    height: 126px;
   }
 }
 
