@@ -518,7 +518,7 @@ li {
 
 .event {
   box-sizing: border-box;
-  height: 420px;
+  /* height: 420px; */
   margin-bottom: 60px;
   padding-top: 60px;
   color: #F2FFE3;
@@ -527,25 +527,25 @@ li {
 
 @media only screen and (max-width: 1001px) {
   .event {
-    height: 390px;
+    /* height: 390px; */
   }
 }
 
 @media only screen and (max-width: 904px) {
   .event {
-    height: 536px;
+    /* height: 536px; */
   }
 }
 
 @media only screen and (max-width: 780px) {
   .event {
-    height: 526px;
+    /* height: 526px; */
   }
 }
 
 @media only screen and (max-width: 770px) {
   .event {
-    height: 474px;
+    /* height: 474px; */
     padding-top: 44px;
   }
 }
@@ -558,7 +558,7 @@ li {
 
 @media only screen and (max-width: 590px) {
   .event {
-    height: 440px;
+    /* height: 440px; */
   }
 }
 
@@ -570,7 +570,7 @@ li {
 
 @media only screen and (max-width: 528px) {
   .event {
-    height: 438px;
+    /* height: 438px; */
   }
 }
 
@@ -590,7 +590,7 @@ li {
 /* @media only screen and (max-width: 350px) { */
 @media only screen and (max-width: 460px) {
   .event {
-    height: 480px;
+    /* height: 480px; */
   }
 }
 
@@ -800,6 +800,7 @@ li {
   display: none;
 }
 .event-fixedHeight {
+  position: relative;
   height: 73px;
 }
 
@@ -912,12 +913,13 @@ li {
 }
 
 .event-signup-text {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 904px) {
   .event-signup-text {
-    margin-top: 12px;
+    /* margin-top: 12px; */
   }
 }
 
@@ -955,9 +957,11 @@ li {
   /* position: absolute;
   bottom: 0;
   left: 0; */
+  position: absolute;
+  bottom: -60px;
   padding: 10px 50px;
   margin-left: 2px;
-  margin-top: 24px;
+  /* margin-top: 24px; */
   
   color: #EF5F3B;
   font-family: 'Noto Sans', sans-serif;
