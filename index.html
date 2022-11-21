@@ -52,41 +52,58 @@
           <p>Feel the respect. Feel the support.</p>
         </div>
       </section>
-      <section id="signup" class="event">
-        <div class="event-container">
-          <h2 class="event-heading">Join our next flight!</h2>
-          <div class="event-content">
-            <div class="event-description">
+      <section id="signup" class="signup">
+        <div class="signup-container">
+          <h2 class="signup-heading">Join our next flight!</h2>
+
+          <!-- Content of the signup section-->
+
+          <div class="signup-content">
+            <div class="signup-eventDescription">
               <p>Sunday, October, 2 23:30</p>
               <p>Harbour National Park, at the Horny Lighthouse</p>
             </div>
-            <div class="event-signup">
-              <!-- Event Form -->
-              <div aria-hidden="false" id="js-signup-group" class="event-dynamic-container" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
-                <form class="event-form" action="">
-                  <div class="event-fields">
-                    <div class="event-fixedHeight">
-                      <div class="event-inputGroup">
-                        <label for="name">How We Call You</label>
-                        <input aria-label="Enter you name" id="name" name="name" type="text">
-                      </div>
-                      <div class="event-inputGroup">
-                        <label for="email">Your Email</label>
-                        <input aria-label="Enter you Email" id="email" name="email" type="text">
-                      </div>
+            <div class="signup-form">
+              <!-- Form -->
+                  <div class="signup-fixedHeight">
+
+                    <div id="js-signup-dynamicContainer" class="signup-dynamicContainer" aria-hidden="false" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
+
+                      <form id="signup-form" action="">
+                        <div class="signup-inputGroup">
+                          <label for="singup-name">How We Call You</label>
+                          <input aria-label="Enter you name" id="singup-name" name="name" type="text">
+                        </div>
+
+                        <div class="signup-inputGroup">
+                          <label for="singup-email">Your Email</label>
+                          <input aria-label="Enter you Email" id="singup-email" name="email" type="email">
+                        </div>
+                      </form>
+
+                      <p role="none" class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
+
                     </div>
-                  </div>
-                  <button aria-label="submit button" id="js-submitButton" class="event-button">Count me in!</button>
-                </form>
-                <p role="none" class="event-signup-text">We need to know the participants so no one is left behind.</p>
-              </div>
-              <!-- Event Success Message -->
-              <div aria-hidden="true" id="js-success-group" class="event-dynamic-container event-success hidden">
-                <div class="event-fixedHeight">
-                  <p>You've been added! Check up your email!</p>
-                </div>
-                <button id="js-backButton" class="event-button">Go Back</button>
-              </div>
+
+                    <!-- Success Message -->
+
+                    <!-- <div class="signup-dynamicContainer" aria-hidden="true">
+                      <div aria-hidden="true" id="js-success-group" class="event-dynamic-container event-success hidden">
+                        <div class="event-fixedHeight">
+                          <p class="signup-successMessage">You've been added! Check up your email!</p>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <!-- Button -->
+
+                    <button form="signup-form" aria-label="submit button" id="js-button">
+                      <span id="js-button-succesMessage" aria-hidden="false">Count me in!</span>
+                      <!-- <span id="js-button-goBackMessage" aria-hidden="true">Go Back</span> -->
+                    </button>
+
+                  </div>  
+              
             </div>
           </div>
         </div>
@@ -170,6 +187,6 @@
         </section>
       </div>
     </footer>
-    <script src="./source/js/script.js"></script>
+    <!-- <script src="./source/js/script.js"></script> -->
   </body>
 </html>

@@ -1,0 +1,535 @@
+.signup {
+  position: relative;
+
+  box-sizing: border-box;
+  height: 420px;
+  margin-bottom: 60px;
+  padding-top: 60px;
+  color: #F2FFE3;
+  background-color: #EF5F3B;
+}
+
+@media only screen and (max-width: 1001px) {
+  .signup {
+    height: 390px;
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .signup {
+    height: 536px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .signup {
+    height: 526px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .signup {
+    height: 474px;
+    padding-top: 44px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .signup {
+    margin-bottom: 44px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .signup {
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 563px) {
+  .signup {
+    margin-bottom: 34px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .signup {
+    height: 438px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .signup {
+    height: 436px;
+    padding-top: 36px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .signup {
+    height: 380px;
+  }
+}
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .signup {
+    height: 480px;
+  }
+}
+
+.signup-container {
+  width: 95%;
+  max-width: 1352px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 904px) {
+  .signup-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .signup-container {
+    width: 90%;
+  }
+}
+
+.signup-heading {
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1083px) {
+  .signup-heading {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 1001px) {
+  .signup-heading {
+    margin-bottom: 38px;
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .signup-heading {
+    margin-bottom: 42px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .signup-heading {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .signup-heading {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .signup-heading {
+    font-size: 22px;
+  }
+}
+
+.signup-content {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 904px) {
+  .signup-content {
+    flex-direction: column;
+  }
+}
+
+
+.signup-eventDescription {
+  flex-basis: 40%;
+  margin-right: 35px;
+}
+
+@media only screen and (max-width: 904px) {
+  .signup-eventDescription {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .signup-eventDescription {
+    margin-bottom: 28px;
+  }
+}
+
+/* @media only screen and (max-width: 415px) {
+  .signup-eventDescription {
+    margin-bottom: 20px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .signup-eventDescription {
+    margin-bottom: 30px;
+  }
+}
+
+.signup-eventDescription p {
+  font-size: 48px;
+  line-height: 0.8;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+@media only screen and (max-width: 1083px) {
+  .signup-eventDescription p {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .signup-eventDescription p {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .signup-eventDescription p {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .signup-eventDescription p {
+    font-size: 30px;
+  }
+}
+
+/* @media only screen and (max-width: 350px) { */
+@media only screen and (max-width: 460px) {
+  .signup-eventDescription p {
+    font-size: 28px;
+  }
+}
+
+.signup-eventDescription p:first-child {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 904px) {
+  .signup-eventDescription p:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 528px) {
+  .signup-eventDescription p:first-child {
+    margin-bottom: 6px;
+  }
+}
+
+.signup-form {
+  flex-basis: 54%;
+  margin-left: 35px;
+}
+
+/* @media only screen and (max-width: 1001px) {
+  .signup-form {
+    flex-basis: 46%;
+  }
+} */
+
+@media only screen and (max-width: 904px) {
+  .signup-form {
+    margin-left: 0;
+  }
+}
+
+/* .signup-fixedHeight {
+  position: relative;
+  height: 73px;
+} */
+
+/* @media only screen and (max-width: 770px) {
+  .signup-fixedHeight {
+    height: 67px;
+  }
+} */
+
+/* @media only screen and (max-width: 415px) {
+  .signup-fixedHeight {
+    height: 53px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+/* @media only screen and (max-width: 460px) {
+  .signup-fixedHeight {
+    height: 126px;
+  }
+} */
+
+/* Hiding and showing container */
+
+.signup-dynamicContainer {
+  /* position: relative; */
+
+  box-sizing: border-box;
+  /* height: 132px; */
+  border: 1px solid transparent;
+}
+
+/* @media only screen and (max-width: 904px) {
+  .signup-dynamicContainer {
+    height: 162px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .signup-dynamicContainer {
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .signup-dynamicContainer {
+    height: 120px;
+  }
+} */
+
+.signup-dynamicContainer[aria-hidden="false"] {
+  display: block;
+}
+
+.signup-dynamicContainer[aria-hidden="true"] {
+  display: none;
+}
+
+/* Inputs */
+
+.signup-inputGroup {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 770px) {
+  .signup-inputGroup {
+    margin-bottom: 4px;
+  }
+}
+
+/* @media only screen and (max-width: 415px) {
+  .signup-inputGroup {
+    margin-bottom: 2px;
+  }
+} */
+
+/* @media only screen and (max-width: 350px) { */
+  @media only screen and (max-width: 460px) {
+    .signup-inputGroup {
+      flex-direction: column;
+      align-items: stretch;
+      margin-bottom: 0;
+    }
+  
+    .signup-inputGroup:first-child {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .signup label {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 590px) {
+    .signup label {
+      font-size: 18px;
+      margin-right: 4px;
+    }
+  }
+  
+  /* @media only screen and (max-width: 415px) {
+    .signup label {
+      font-size: 16px;
+    }
+  } */
+  /* @media only screen and (max-width: 350px) { */
+  @media only screen and (max-width: 460px) {
+    .signup label {
+      margin-right: 0;
+      margin-bottom: 4px;
+      font-size: 16px;
+    }
+  }
+  
+  .signup input {
+    flex-grow: 1;
+    display: inline-block;
+    font-size: 20px;
+    color: #F2FFE3;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    border: none;
+    border-bottom: 2px solid #F2FFE3;
+    background-color: transparent;
+    border-radius: 0;
+  }
+  
+  @media only screen and (max-width: 590px) {
+    .signup input {
+      font-size: 18px;
+    }
+  }
+  
+  /* @media only screen and (max-width: 415px) { */
+  @media only screen and (max-width: 460px) {
+    .signup input {
+      font-size: 16px;
+    }
+  }
+  
+  .signup input:focus {
+    border-radius: 0;
+    outline-offset: 1px;
+  }
+
+  .signup-formExplanation {
+    /* margin-top: 10px; */
+    margin-top: 100px;
+  }
+  
+  @media only screen and (max-width: 904px) {
+    .signup-formExplanation {
+      /* margin-top: 12px; */
+    }
+  }
+  
+  @media only screen and (max-width: 770px) {
+    .signup-formExplanation {
+      /* margin-top: 86px; */
+    }
+  }
+
+  @media only screen and (max-width: 460px) {
+    .signup-formExplanation {
+      margin-top: 85px;
+    }
+  }
+  
+  /* @media only screen and (max-width: 415px) {
+    .signup-formExplanation {
+      margin-top: 76px;
+      font-size: 14px;
+    }
+  } */
+
+  .signup-successMessage p {
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 590px) {
+    .signup-successMessage p {
+      font-size: 18px;
+      margin-right: 4px;
+    }
+  }
+  
+  @media only screen and (max-width: 415px) {
+    .signup-successMessage p {
+      font-size: 16px;
+    }
+  }
+
+.signup button {
+  position: absolute;
+  bottom: 100px;
+  padding: 10px 50px;
+
+  margin-left: 2px;
+
+  color: #EF5F3B;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background-color: #F2FFE3;
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+}
+
+@media only screen and (max-width: 1083px) {
+  .signup button {
+    bottom: 110px;
+  }
+}
+
+@media only screen and (max-width: 1001px) {
+  .signup button {
+    bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 904px) {
+  .signup button {
+    bottom: 125px;
+
+    padding: 10px 35px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .signup button {
+    bottom: 115px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .signup button {
+    bottom: 105px;
+  }
+}
+
+@media only screen and (max-width: 732px) {
+  .signup button {
+    bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .signup button {
+    /* bottom: 75px; */
+
+    padding: 7px 24px;
+
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .signup button {
+    bottom: 90px;
+  }
+}
+
+.signup button:hover {
+  color: #F2FFE3;
+
+  background-color: #3F433A;
+}
