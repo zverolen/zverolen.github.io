@@ -376,15 +376,21 @@
   
   .signup input {
     flex-grow: 1;
+
     display: inline-block;
+
+    margin: 0;
+
     font-size: 20px;
     color: #F2FFE3;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
+
     border: none;
     border-bottom: 2px solid #F2FFE3;
-    background-color: transparent;
     border-radius: 0;
+    
+    background-color: transparent;
   }
   
   @media only screen and (max-width: 590px) {
