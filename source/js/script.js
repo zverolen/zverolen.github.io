@@ -1,27 +1,21 @@
-const hiddenClass = 'hidden';
-const submitButtonId = 'js-submitButton';
-const backButtonId = 'js-backButton';
-const signupForm = document.getElementById('js-signup-group');
-const signupSuccess = document.getElementById('js-success-group');
-const submitButton = document.getElementById(submitButtonId);
-const singupBack = document.getElementById(backButtonId);
+const signupForm = document.getElementById('js-signupForm');
+const successMessage = document.getElementById('js-successMessage');
+const buttons = document.querySelectorAll('button');
+const signupButton = document.getElementById('js-signupButton');
+const successButton = document.getElementById('js-successButton');
 
-const toggleSignupView = (event) => {
+const toggleSignupView = function(event) {
   event.preventDefault();
-  signupForm.classList.toggle(hiddenClass);
-  signupSuccess.classList.toggle(hiddenClass);
-  changeAriaHidden(event.target.id);
-}
+  const initialAriaHiddenValue = signupForm.getAttribute('aria-hidden');
+  const convertedAriaHiddenValue = (initialAriaHiddenValue === 'true');
+  const reversedAriaHiddenValue = (!convertedAriaHiddenValue).toString();
+  
+  signupForm.setAttribute('aria-hidden', reversedAriaHiddenValue);
+  signupButton.setAttribute('aria-hidden', reversedAriaHiddenValue);
+  successMessage.setAttribute('aria-hidden', initialAriaHiddenValue);
+  successButton.setAttribute('aria-hidden', initialAriaHiddenValue);
+};
 
-const changeAriaHidden = function(elementId) {
-  if (elementId === submitButtonId) {
-    signupForm.setAttribute('aria-hidden', 'true');
-    signupSuccess.setAttribute('aria-hidden', 'false');
-  } else {
-    signupSuccess.setAttribute('aria-hidden', 'true');
-    signupForm.setAttribute('aria-hidden', 'false');
-  }
-}
-
-submitButton.addEventListener('click', toggleSignupView);
-singupBack.addEventListener('click', toggleSignupView);
+buttons.forEach((button) => {
+  button.addEventListener('click', toggleSignupView); 
+});
