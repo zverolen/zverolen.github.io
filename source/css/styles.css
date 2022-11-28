@@ -243,6 +243,10 @@ input {
 
 .bats-gallery-container {
   display: flex;
+
+  max-width: 90.25rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1.875rem;
 }
 
@@ -312,7 +316,6 @@ input {
   }
 
 }
-
 
 .bats-gallery-item:first-child {
   margin-left: 1rem;
