@@ -1,3 +1,5 @@
+/* NOTE - Navigation Transforms at 56.25rem */
+
 /* Global */
 
 html {
@@ -58,8 +60,17 @@ li {
 
 .illustration-item {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
 }
 
 /* Components */
@@ -93,24 +104,16 @@ li {
   max-width: 84.5rem;
 }
 
-/* Navigation Transforms */
-
 @media only screen and (max-width: 56.25rem) {
   .header-content {
     flex-direction: column;
   }
 }
 
-.header a {
-  color: #E8D6C4;
-}
-
 .logo-container {
   display: inline-flex;
   text-decoration: none;
 }
-
-/* Navigation Transforms */
 
 @media only screen and (max-width: 56.25rem) {
   .logo-container {
@@ -129,86 +132,82 @@ li {
   }
 }
 
-/* Navigation Transforms */
-
 @media only screen and (max-width: 56.25rem) {
   .logo-illustration {
     width: 1.5rem;
   }
 }
 
-.logo-heading {
+.logo-caption {
   margin-top: 1rem;
+  color: #E8D6C4;
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
 }
 
 @media only screen and (max-width: 58.75rem) {
-  .logo-heading {
+  .logo-caption {
     margin-top: 0.6875rem;
     font-size: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 56.25rem) {
-  .logo-heading {
+  .logo-caption {
     margin-top: 0;
     font-size: 1.875rem;
   }
 }
 
-.menu {
-  display: inline-block;
+.header-menu {
+  display: inline-flex;
+  justify-content: space-between;
   width: 30%;
 }
 
 @media only screen and (max-width: 75rem) {
-  .menu {
+  .header-menu {
     width: 40%;
   }
 }
 
 @media only screen and (max-width: 58.75rem) {
-  .menu {
+  .header-menu {
     width: 50%;
   }
 }
 
 @media only screen and (max-width: 45.5rem) {
-  .menu {
+  .header-menu {
     width: 70%;
   }
 }
 
 @media only screen and (max-width: 31.25rem) {
-  .menu {
+  .header-menu {
     width: 90%;
   }
 }
 
 @media only screen and (max-width: 23.75rem) {
-  .menu {
+  .header-menu {
     width: 100%;
   }
 }
 
-.menu ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu a {
+.header-menuLink {
+  color: #E8D6C4;
   font-size: 1.125rem;
   font-weight: 300;
 }
 
 @media only screen and (max-width: 27.5rem) {
-  .menu a {
+  .header-menuLink {
     font-size: 1rem;
   }
 }
 
-.menu a:hover {
+.header-menuLink:hover {
   background-color: #E8D6C4;
   color: #393C36;
 }
@@ -293,7 +292,6 @@ li {
   }
 }
 
-
 .beers-section {
   width: 94%;
   max-width: 84.5rem;
@@ -310,6 +308,7 @@ li {
 .beers-card {
   flex-basis: 45%;
   display: flex;
+  flex-direction: row-reverse;
 
   background-color: #ffffff;
 }
@@ -706,6 +705,8 @@ footer {
 }
 
 .credits a {
+  display: block;
+
   color: #B9C0B1;
 }
 
