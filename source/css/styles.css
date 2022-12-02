@@ -725,16 +725,6 @@ footer {
   }
 }
 
-.credits-column:first-child {
-  margin-bottom: 1rem;
-}
-
-@media only screen and (max-width: 35rem) {
-  .credits-column:first-child {
-    margin-bottom: 0;
-  }
-}
-
 .credits a {
   display: block;
 
