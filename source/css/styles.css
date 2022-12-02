@@ -159,9 +159,9 @@ li {
   }
 }
 
-@media only screen and (max-width: 276px) {
+@media only screen and (max-width: 17.25rem) {
   .logo-caption {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 
@@ -201,7 +201,7 @@ li {
   }
 }
 
-@media only screen and (max-width: 276px) {
+@media only screen and (max-width: 17.25rem) {
   .header-menu {
     flex-wrap: wrap;
   }
