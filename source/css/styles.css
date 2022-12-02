@@ -159,6 +159,12 @@ li {
   }
 }
 
+@media only screen and (max-width: 276px) {
+  .logo-caption {
+    font-size: 26px;
+  }
+}
+
 .header-menu {
   display: inline-flex;
   justify-content: space-between;
@@ -192,6 +198,12 @@ li {
 @media only screen and (max-width: 23.75rem) {
   .header-menu {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 276px) {
+  .header-menu {
+    flex-wrap: wrap;
   }
 }
 
@@ -516,20 +528,17 @@ li {
 }
 
 .contacts-group {
-  flex-basis: 9.375rem;
+  flex-basis: 11.875rem;
 }
 
-@media only screen and (max-width: 48.5rem) {
-  .contacts-group {
-    flex-basis: 11.1875rem;
-  }
+@media only screen and (max-width: 51.25rem) {
 
-  .contacts-group:first-child {
+  .contacts-group:nth-child(2) {
     margin-bottom: 1.875rem;
   }
 }
 
-@media only screen and (max-width: 36.6875rem) {
+@media only screen and (max-width: 37.875rem) {
   .contacts-group {
     flex-basis: 100%;
     text-align: center;
@@ -539,7 +548,7 @@ li {
     margin-bottom: 1.25rem;
   }
 
-  .contacts-group:first-child {
+  .contacts-group::nth-child(2) {
     margin-bottom: 1.25rem;
   }
 }
@@ -668,6 +677,12 @@ footer {
   background-color: #393C36;
 }
 
+@media only screen and (max-width: 35rem) {
+  footer {
+    padding: 1.875rem 0 1rem;
+  }
+}
+
 .credits {
   width: 94%;
   max-width: 84.5rem;
@@ -675,7 +690,7 @@ footer {
 }
 
 .credits-heading {
-  margin-bottom: 0.75rem;
+  margin-bottom:1.25rem;
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -688,7 +703,7 @@ footer {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 33.125rem) {
+@media only screen and (max-width: 59.375rem) {
   .credits-container {
     flex-wrap: wrap;
   }
@@ -698,9 +713,25 @@ footer {
   flex-basis: 30%;
 }
 
-@media only screen and (max-width: 33.125rem) {
+@media only screen and (max-width: 59.375rem) {
   .credits-column {
     flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: 35rem) {
+  .credits-column {
+    flex-basis: 100%;
+  }
+}
+
+.credits-column:first-child {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 35rem) {
+  .credits-column:first-child {
+    margin-bottom: 0;
   }
 }
 
@@ -708,6 +739,12 @@ footer {
   display: block;
 
   color: #B9C0B1;
+}
+
+@media only screen and (max-width: 35rem) {
+  .credits a {
+    margin-bottom: 0.375rem;
+  }
 }
 
 .credits a:hover {
