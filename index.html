@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>TESTING Night Flight</title>
+    <title>Night Flight</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="./source/css/styles.css">
   </head>
   <body>
-    <main role="none">
+    <main>
       <!-- Intro -->
       <section>
         <div class="intro site-frame">
           <div class="intro-heading-container">
             <img class="intro-logo" src="./public/images/temp-logo2.svg" alt="">
             <h1 class="intro-heading">Night Flight Club</h1>
-            <img class="intro-logo" src="./public/images/temp-logo2.svg" alt="">
+            <img class="intro-logo" src="./public/images/temp-logo2.svg" alt="Night Flight logo: a smiling bat flying over the moon-lit ocean">
           </div>
           <p class="intro-moto">Don't be left out! Join our crowd!</p>
         </div>
         <div class="bats-gallery">
-          <div class="bats-gallery-container" aria-label="Some of our members">
+          <h2 class="visually-hidden">Some of our members</h2>
+          <div class="bats-gallery-container">
             
             <div class="bats-gallery-item illustration-container">
               <img
@@ -115,10 +116,11 @@
 
       <!-- Description -->
 
-      <section class="description site-frame" aria-label="What is Night Flight?">
-        <h2 class="description-heading">Night Flight is a community of Sydney vampires who are sick of staying all creepy and lonely.</h2>
+      <section class="description site-frame">
+        <h2 class="visually-hidden">What is Night Flight</h2>
+        <p class="description-heading">Night Flight is a community of Sydney vampires who are sick of staying all creepy and lonely.</p>
         <div class="description-text">
-          <p>We transform into bats and fly under the stars<br>two or three times per month.</p>
+          <p class="description-twoLineParagraph">We transform into bats and fly under the stars two or three times per month.</p>
           <p>Enjoy the freedom and the fellowship.</p>
           <p>Feel the respect. Feel the support.</p>
         </div>
@@ -133,24 +135,25 @@
           <!-- Content of the signup section-->
 
           <div class="signup-content">
-            <div class="signup-eventDescription" aria-label="Date, Time and Place">
-              <p>Sunday, October, 2 23:30</p>
+            <div class="signup-eventDescription">
+              <h3 class="visually-hidden">Date, Time and Place</h3>
+              <p>Sunday, October, 2 11:30 PM</p>
               <p>Harbour National Park, at the Horny Lighthouse</p>
             </div>
             <div class="signup-form">
-              <!-- Form -->
 
-              <div id="js-signupForm" class="signup-dynamicContainer" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
-
+              <div id="js-signupForm" class="signup-dynamicContainer">
+                <p class="visually-hidden">Please, fill in the sign up form so no one is left behind in our flight!</p>
+                <!-- Form -->
                 <form id="signup-form" action="">
                   <div class="signup-inputGroup">
                     <label aria-hidden="true" for="singup-name">How We Call You</label>
-                    <input aria-label="Enter you name" id="singup-name" name="name" type="text" autocomplete="name">
+                    <input aria-label="Enter you name" id="singup-name" name="name" type="text">
                   </div>
 
                   <div class="signup-inputGroup">
                     <label aria-hidden="true" for="singup-email">Your Email</label>
-                    <input aria-label="Enter you Email" id="singup-email" name="email" type="email" autocomplete="email">
+                    <input aria-label="Enter you Email" id="singup-email" name="email" type="email">
                   </div>
 
                   <p aria-hidden="true" class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
@@ -165,8 +168,9 @@
                 <!-- Success Message -->
 
                 <div id="js-successMessage" class="signup-dynamicContainer" hidden role="alert">
-                  <div aria-hidden="true" class="event-dynamic-container event-success hidden">
+                  <div class="event-dynamic-container event-success hidden">
                       <p id="js-signup-successMessageContent" class="signup-successMessage"></p>
+                      <p>DEVELOPER NOTE: THIS HIDES THE CTA LINK IN THE FOOTER.</p>
                   </div>
 
                 </div>
@@ -178,8 +182,9 @@
       <!-- Sydney Views Gallery -->
 
       <section class="gallery site-frame">
-        <h2 aria-hidden="true" class="gallery-heading">Look! What a View!</h2>
-        <div class="gallery-container" aria-label="Views of Sydney at night">
+        <h2 class="visually-hidden">Photos of Sydney at night</h2>
+        <p aria-hidden="true" class="gallery-heading">Look! What a View!</p>
+        <div class="gallery-container">
 
           <div class="gallery-item illustration-container">
             <img
@@ -412,10 +417,10 @@
       </section>
     </main>
 
-    <footer role="none">
+    <footer>
       <div class="footer-top-section">
         <section class="cta site-frame">
-          <a aria-label="Go to the sign up form" class="cta-link" href="#js-signupForm">Join Night Flight!</a>
+          <a id="js-ctaLink" aria-label="Go to the sign up form" class="cta-link" href="#js-signupForm">Join Night Flight!</a>
         </section>
       </div>
 

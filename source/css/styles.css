@@ -1,7 +1,6 @@
 /* Sign Up Component Import */
 
 @import 'signup.css';
-
 /* General Styles */
 
 html {
@@ -47,6 +46,15 @@ li {
 
 input {
   margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
 }
 
 .site-frame {
@@ -442,6 +450,36 @@ input {
   .description-heading {
     margin-bottom: 1.375rem;
     font-size: 1.25rem;
+  }
+}
+
+.description-twoLineParagraph {
+  margin-left: auto;
+  margin-right: auto;
+  width: 21em;
+}
+
+@media only screen and (max-width: 68.75rem) {
+  .description-twoLineParagraph {
+    width: 22.692307692307692em;
+  }
+}
+
+@media only screen and (max-width: 48.125rem) {
+  .description-twoLineParagraph {
+    width: 22.5em;
+  }
+}
+
+@media only screen and (max-width: 27.5rem) {
+  .description-twoLineParagraph {
+    width: 18.125em;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  .description-twoLineParagraph {
+    width: 100%;
   }
 }
 
