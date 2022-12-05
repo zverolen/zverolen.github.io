@@ -1,103 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Elena Zvereva - Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <header>
-            <img width="40px" class="header-logo" src="./images/logo.svg" alt="Elena Zvereva, site logo">
-            <a class="header-link" href="mailto:zverolen@gmail.com">
-                <img src="./images/email-icon.svg" alt="">
-            </a>
-        </header>
-    </body>
-    <main>
-        <h1>Elena Zvereva Portfolio: Selected Projects</h1>
-        <section>
-            <h2>About me</h2>
-            <p>Hello! I'm a self-taught frontend web developer based in Barcelona, Spain.</p>
-            <p>I primarily work with CSS and HTML with Vanilla Javascript to provide user interactions.</p>
-            <p>I'm also familiar with UX/UI design and consider it to be my hobby.</p>
-            <p>My work is best described with the projects listed below. Take a look!</p>
-        </section>
-        <section>
-            <h2>Skills and Tools</h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-            <p>Git</p>
-            <p>Responsive Images</p>
-            <p>Accessibility</p>
-            <p>Testing</p>
-            <p>Figma</p>
-            <p>UX/UI</p>
-            <p>Photoshop</p>
-        </section>
-        <section>
-            <h2>Selected Projects</h2>
-            <ul>
-                <li>
-                    <h3>My Portfolio Website</h3>
-                    <h4>Project Description</h4>
-                    <p>A place to showcast my projects</p>
-                    <h5>Features</h5>
-                        <p>HTML, SASS and JS</p>
-                        <p>Mobile ready</p>
-                        <p>Responsive images</p>
-                        <p>Screen Readers-friendly</p>
-                        <p>Designed in Figma</p>
-                        <p>Imagery made in Inkscape, Photoshop and Figma. Photo reference included.</p>
-                        <p>Colors checked for their contrast ratio</p>
-                    <a href="">Link to the Portfolio site on Github</a>
-                </li>
-                <li>
-                    <h3>Local Vampire Club</h3>
-                    <h4>Project Description</h4>
-                    <p>Night Flight is a local club for vampires from Sydney. They gather, turn to bats and fly over city together.</p>
-                    <p>This was a task from a Codecademy course. The goal was to create a responsive web site for any local club.</p>
-                    <h5>Features</h5>
-                    <p>HTML, CSS and JS for a form sign-up simulation</p>
-                    <p>Mobile ready</p>
-                    <p>Responsive images</p>
-                    <p>Screen Readers-friendly</p>
-                    <p>Designed in Browser</p>
-                    <p>Imagery made in Inkscape, Photoshop and Figma. Photo reference included.</p>
-                    <p>Colors checked for their contrast ratio</p>
-                    <a href="">Link to Night Flight on Github</a>
-                </li>
-                <li>
-                    <h3>Non-alco Craft Brewery</h3>
-                    <h4>Project Description</h4>
-                    <p>O2 is a craft beer company that mastered brewing beers with no alcohol in them.</p>
-                    <p>This was another task from a Codecademy course. The goal was to create a company web site which is responsive and uses Flexbox.</p>
-                    <h5>Features</h5>
-                    <p>HTML and CSS</p>
-                    <p>Mobile ready</p>
-                    <p>Responsive images</p>
-                    <p>Screen Readers-friendly</p>
-                    <p>Designed in Browser</p>
-                    <p>Imagery made in Figma. Photo reference included.</p>
-                    <p>Colors checked for their contrast ratio</p>
-                    <a href="">Link to O2 on Github</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contacts</h2>
-            <p>You can write me on <a href="">Telegram</a>, <a href="">email</a> or social media.</p>
-            <h3>Contact Links</h3>
-            <ul>
-                <li style="list-style: none;"><a href="">LinkedIn</a></li>
-                <li style="list-style: none;"><a href="">Github</a></li>
-                <li style="list-style: none;"><a href="">Behance</a></li>
-                <li style="list-style: none;"><a href="">Telegram</a></li>
-                <li style="list-style: none;"><a href="">Email</a></li>
-            </ul>
-        </section>
+  <head>
+    <meta charset="utf-8">
+    <title>TESTING Night Flight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&family=Nanum+Pen+Script&family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./source/css/styles.css">
+  </head>
+  <body>
+    <main role="none">
+      <!-- Intro -->
+      <section>
+        <div class="intro site-frame">
+          <div class="intro-heading-container">
+            <img class="intro-logo" src="./public/images/temp-logo2.svg" alt="">
+            <h1 class="intro-heading">Night Flight Club</h1>
+            <img class="intro-logo" src="./public/images/temp-logo2.svg" alt="">
+          </div>
+          <p class="intro-moto">Don't be left out! Join our crowd!</p>
+        </div>
+        <div class="bats-gallery">
+          <div class="bats-gallery-container" aria-label="Some of our members">
+            
+            <div class="bats-gallery-item illustration-container">
+              <img
+                class="illustration-item"
+                sizes="(max-width: 600px) 23vw, 188px"
+                srcset="
+                ./public/images/caren-bat/caren-bat_hxjjeg_c_scale,w_74.jpg 74w,
+                ./public/images/caren-bat/caren-bat_hxjjeg_c_scale,w_376.jpg 376w"
+                src="./public/images/caren-bat/caren-bat_hxjjeg_c_scale,w_74.jpg"
+                alt="Caren">
+            </div>
+
+            <div class="bats-gallery-item illustration-container">
+              <img
+                class="illustration-item"
+                sizes="(max-width: 600px) 23vw, 188px"
+                srcset="
+                ./public/images/billy-bat/billy-bat_uy51fm_c_scale,w_74.jpg 74w,
+                ./public/images/billy-bat/billy-bat_uy51fm_c_scale,w_266.jpg 266w,
+                ./public/images/billy-bat/billy-bat_uy51fm_c_scale,w_376.jpg 376w"
+                src="./public/images/billy-bat/billy-bat_uy51fm_c_scale,w_74.jpg"
+                alt="Billy">
+            </div>
+
+            <div class="bats-gallery-item illustration-container">
+              <img
+                class="illustration-item"
+                sizes="(max-width: 600px) 23vw, 188px"
+                srcset="
+                ./public/images/nadine-bat/nadine-bat_qolc4n_c_scale,w_74.jpg 74w,
+                ./public/images/nadine-bat/nadine-bat_qolc4n_c_scale,w_269.jpg 269w,
+                ./public/images/nadine-bat/nadine-bat_qolc4n_c_scale,w_376.jpg 376w"
+                src="./public/images/nadine-bat/nadine-bat_qolc4n_c_scale,w_74.jpg"
+                alt="Nadine">
+            </div>
+
+            <div class="bats-gallery-item illustration-container">
+              <img
+                class="illustration-item"
+                sizes="(max-width: 600px) 23vw, 188px"
+                srcset="
+                ./public/images/creg-bat/creg-bat_n7tlj6_c_scale,w_74.jpg 74w,
+                ./public/images/creg-bat/creg-bat_n7tlj6_c_scale,w_248.jpg 248w,
+                ./public/images/creg-bat/creg-bat_n7tlj6_c_scale,w_376.jpg 376w"
+                src="./public/images/creg-bat/creg-bat_n7tlj6_c_scale,w_74.jpg"
+                alt="Creg">
+            </div>
+
+            <div class="bats-gallery-item illustration-container">
+              <img
+                class="illustration-item"
+                sizes="(max-width: 600px) 23vw, 188px"
+                srcset="
+                ./public/images/kate-bat/kate-bat_tekahc_c_scale,w_74.jpg 74w,
+                ./public/images/kate-bat/kate-bat_tekahc_c_scale,w_265.jpg 265w,
+                ./public/images/kate-bat/kate-bat_tekahc_c_scale,w_376.jpg 376w"
+                src="./public/images/kate-bat/kate-bat_tekahc_c_scale,w_74.jpg"
+                alt="Kate">
+            </div>
+
+            <div class="bats-gallery-item illustration-container">
+              <img
+                class="illustration-item"
+                sizes="(max-width: 600px) 23vw, 188px"
+                srcset="
+                ./public/images/michael-bat/michael-bat_i4t30v_c_scale,w_74.jpg 74w,
+                ./public/images/michael-bat/michael-bat_i4t30v_c_scale,w_227.jpg 227w,
+                ./public/images/michael-bat/michael-bat_i4t30v_c_scale,w_346.jpg 346w,
+                ./public/images/michael-bat/michael-bat_i4t30v_c_scale,w_376.jpg 376w"
+                src="./public/images/michael-bat/michael-bat_i4t30v_c_scale,w_74.jpg"
+                alt="Michael">
+            </div>
+
+            <div class="bats-gallery-item illustration-container">
+              <img
+                class="illustration-item"
+                sizes="(max-width: 600px) 23vw, 188px"
+                srcset="
+                ./public/images/natalie-bat/natalie-bat_nbzkgi_c_scale,w_74.jpg 74w,
+                ./public/images/natalie-bat/natalie-bat_nbzkgi_c_scale,w_293.jpg 293w,
+                ./public/images/natalie-bat/natalie-bat_nbzkgi_c_scale,w_376.jpg 376w"
+                src="./public/images/natalie-bat/natalie-bat_nbzkgi_c_scale,w_74.jpg"
+                alt="Natalie">
+            </div>
+
+          </div>
+          <p aria-hidden="true" class="bats-gallery-text">Just to name a few!</p>
+        </div>
+      </section>
+
+      <!-- Description -->
+
+      <section class="description site-frame" aria-label="What is Night Flight?">
+        <h2 class="description-heading">Night Flight is a community of Sydney vampires who are sick of staying all creepy and lonely.</h2>
+        <div class="description-text">
+          <p>We transform into bats and fly under the stars<br>two or three times per month.</p>
+          <p>Enjoy the freedom and the fellowship.</p>
+          <p>Feel the respect. Feel the support.</p>
+        </div>
+      </section>
+
+      <!-- Sign Up -->
+
+      <section class="signup">
+        <div class="site-frame">
+          <h2 class="signup-heading">Join our next flight!</h2>
+
+          <!-- Content of the signup section-->
+
+          <div class="signup-content">
+            <div class="signup-eventDescription" aria-label="Date, Time and Place">
+              <p>Sunday, October, 2 23:30</p>
+              <p>Harbour National Park, at the Horny Lighthouse</p>
+            </div>
+            <div class="signup-form">
+              <!-- Form -->
+
+              <div id="js-signupForm" class="signup-dynamicContainer" aria-label="Please, fill in the sign up form to make sure no one is left behind in our flight!">
+
+                <form id="signup-form" action="">
+                  <div class="signup-inputGroup">
+                    <label aria-hidden="true" for="singup-name">How We Call You</label>
+                    <input aria-label="Enter you name" id="singup-name" name="name" type="text" autocomplete="name">
+                  </div>
+
+                  <div class="signup-inputGroup">
+                    <label aria-hidden="true" for="singup-email">Your Email</label>
+                    <input aria-label="Enter you Email" id="singup-email" name="email" type="email" autocomplete="email">
+                  </div>
+
+                  <p aria-hidden="true" class="signup-formExplanation">We need to know the participants so no one is left behind.</p>
+
+                  <!-- Button -->
+
+                  <button type="submit" id="js-signupButton">Count me in</button>
+                </form>
+
+                </div>
+
+                <!-- Success Message -->
+
+                <div id="js-successMessage" class="signup-dynamicContainer" hidden role="alert">
+                  <div aria-hidden="true" class="event-dynamic-container event-success hidden">
+                      <p id="js-signup-successMessageContent" class="signup-successMessage"></p>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sydney Views Gallery -->
+
+      <section class="gallery site-frame">
+        <h2 aria-hidden="true" class="gallery-heading">Look! What a View!</h2>
+        <div class="gallery-container" aria-label="Views of Sydney at night">
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-1/sydney-view-1_o6gc5z_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-1/sydney-view-1_o6gc5z_c_scale,w_233.jpg 233w,
+                ./public/images/sydney-view-1/sydney-view-1_o6gc5z_c_scale,w_338.jpg 338w,
+                ./public/images/sydney-view-1/sydney-view-1_o6gc5z_c_scale,w_423.jpg 423w,
+                ./public/images/sydney-view-1/sydney-view-1_o6gc5z_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-1/sydney-view-1_o6gc5z_c_scale,w_92.jpg"
+                alt="Skyscrapers at night">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-2/sydney-view-2_vvb5ll_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-2/sydney-view-2_vvb5ll_c_scale,w_225.jpg 225w,
+                ./public/images/sydney-view-2/sydney-view-2_vvb5ll_c_scale,w_321.jpg 321w,
+                ./public/images/sydney-view-2/sydney-view-2_vvb5ll_c_scale,w_398.jpg 398w,
+                ./public/images/sydney-view-2/sydney-view-2_vvb5ll_c_scale,w_493.jpg 493w,
+                ./public/images/sydney-view-2/sydney-view-2_vvb5ll_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-2/sydney-view-2_vvb5ll_c_scale,w_92.jpg"
+                alt="Ferris wheel and the park">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-3/sydney-view-3_cnf871_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-3/sydney-view-3_cnf871_c_scale,w_263.jpg 263w,
+                ./public/images/sydney-view-3/sydney-view-3_cnf871_c_scale,w_380.jpg 380w,
+                ./public/images/sydney-view-3/sydney-view-3_cnf871_c_scale,w_487.jpg 487w,
+                ./public/images/sydney-view-3/sydney-view-3_cnf871_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-3/sydney-view-3_cnf871_c_scale,w_92.jpg"
+                alt="Bridge seen from the water">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-4/sydney-view-4_mfmhrf_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-4/sydney-view-4_mfmhrf_c_scale,w_282.jpg 282w,
+                ./public/images/sydney-view-4/sydney-view-4_mfmhrf_c_scale,w_462.jpg 462w,
+                ./public/images/sydney-view-4/sydney-view-4_mfmhrf_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-4/sydney-view-4_mfmhrf_c_scale,w_92.jpg"
+                alt="Night city">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-5/sydney-view-5_klmki8_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-5/sydney-view-5_klmki8_c_scale,w_190.jpg 190w,
+                ./public/images/sydney-view-5/sydney-view-5_klmki8_c_scale,w_262.jpg 262w,
+                ./public/images/sydney-view-5/sydney-view-5_klmki8_c_scale,w_351.jpg 351w,
+                ./public/images/sydney-view-5/sydney-view-5_klmki8_c_scale,w_452.jpg 452w,
+                ./public/images/sydney-view-5/sydney-view-5_klmki8_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-5/sydney-view-5_klmki8_c_scale,w_92.jpg"
+                alt="Tram at night">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-6/sydney-view-6_r4qofy_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-6/sydney-view-6_r4qofy_c_scale,w_295.jpg 295w,
+                ./public/images/sydney-view-6/sydney-view-6_r4qofy_c_scale,w_437.jpg 437w,
+                ./public/images/sydney-view-6/sydney-view-6_r4qofy_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-6/sydney-view-6_r4qofy_c_scale,w_92.jpg"
+                alt="Sydney Opera House and Sydney Harbour from distance">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-7/sydney-view-7_qeuyby_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-7/sydney-view-7_qeuyby_c_scale,w_382.jpg 382w,
+                ./public/images/sydney-view-7/sydney-view-7_qeuyby_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-7/sydney-view-7_qeuyby_c_scale,w_92.jpg"
+                alt="Sydney Buildings silhouette at the dusk">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-8/sydney-view-8_wbesos_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-8/sydney-view-8_wbesos_c_scale,w_213.jpg 213w,
+                ./public/images/sydney-view-8/sydney-view-8_wbesos_c_scale,w_302.jpg 302w,
+                ./public/images/sydney-view-8/sydney-view-8_wbesos_c_scale,w_372.jpg 372w,
+                ./public/images/sydney-view-8/sydney-view-8_wbesos_c_scale,w_446.jpg 446w,
+                ./public/images/sydney-view-8/sydney-view-8_wbesos_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-8/sydney-view-8_wbesos_c_scale,w_92.jpg"
+                alt="Sydney Harbour Bridge in lights">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-9/sydney-view-9_s49ljp_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-9/sydney-view-9_s49ljp_c_scale,w_244.jpg 244w,
+                ./public/images/sydney-view-9/sydney-view-9_s49ljp_c_scale,w_353.jpg 353w,
+                ./public/images/sydney-view-9/sydney-view-9_s49ljp_c_scale,w_440.jpg 440w,
+                ./public/images/sydney-view-9/sydney-view-9_s49ljp_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-9/sydney-view-9_s49ljp_c_scale,w_92.jpg"
+                alt="Sydney Opera House">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-10/sydney-view-10_kj4hx4_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-10/sydney-view-10_kj4hx4_c_scale,w_202.jpg 202w,
+                ./public/images/sydney-view-10/sydney-view-10_kj4hx4_c_scale,w_278.jpg 278w,
+                ./public/images/sydney-view-10/sydney-view-10_kj4hx4_c_scale,w_343.jpg 343w,
+                ./public/images/sydney-view-10/sydney-view-10_kj4hx4_c_scale,w_501.jpg 501w,
+                ./public/images/sydney-view-10/sydney-view-10_kj4hx4_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-10/sydney-view-10_kj4hx4_c_scale,w_92.jpg"
+                alt="Sydney Harbour Bridge, view from below">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-11/sydney-view-11_jsvqiz_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-11/sydney-view-11_jsvqiz_c_scale,w_307.jpg 307w,
+                ./public/images/sydney-view-11/sydney-view-11_jsvqiz_c_scale,w_471.jpg 471w,
+                ./public/images/sydney-view-11/sydney-view-11_jsvqiz_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-11/sydney-view-11_jsvqiz_c_scale,w_92.jpg"
+                alt="Sydney Opera House">
+          </div>
+
+          <div class="gallery-item illustration-container">
+            <img
+                class="illustration-item"
+                sizes="
+                (max-width: 440px) 29vw, 
+                (max-width: 528px) 22vw,
+                (max-width: 600px) 19vw,
+                (max-width: 904px) 15vw,
+                254px"
+                srcset="
+                ./public/images/sydney-view-12/sydney-view-12_x8ho0s_c_scale,w_92.jpg 92w,
+                ./public/images/sydney-view-12/sydney-view-12_x8ho0s_c_scale,w_248.jpg 248w,
+                ./public/images/sydney-view-12/sydney-view-12_x8ho0s_c_scale,w_362.jpg 362w,
+                ./public/images/sydney-view-12/sydney-view-12_x8ho0s_c_scale,w_457.jpg 457w,
+                ./public/images/sydney-view-12/sydney-view-12_x8ho0s_c_scale,w_508.jpg 508w"
+                src="./public/images/sydney-view-12/sydney-view-12_x8ho0s_c_scale,w_92.jpg"
+                alt="Sydney Opera House with projected ornaments on it">
+          </div>
+
+        </div>
+      </section>
     </main>
-    <footer>
-        <p>Have a nice day!</p>
+
+    <footer role="none">
+      <div class="footer-top-section">
+        <section class="cta site-frame">
+          <a aria-label="Go to the sign up form" class="cta-link" href="#js-signupForm">Join Night Flight!</a>
+        </section>
+      </div>
+
+      <div class="footer-bottom-section">
+        <section aria-label="Links to photos used on this website" class="footer-credit-container site-frame">
+          <h2 class="footer-credit-heading">Photo Credit</h2>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/fC2bnCRAvvY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Caren</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/Z00K8iSWpNc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Skyscrapers at night</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/fgy7tXxfqhE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Ferris wheel and the park</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/vAAuJAsm59A?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Bridge seen from the water</a>  
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/YoEMMc-fnCs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Night city</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/8H0A2BVdRJM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Tram at night</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/jJF-zlkXTmU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House and Sydney Harbour from distance</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/_l0tBaVBx1g?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Buildings silhouette at the dusk</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/ZsH1wHv2iTU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Harbour Bridge in lights</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/RK5gtzZawSc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/FUh6nK3s0po?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Harbour Bridge from below</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/einIuvtZen4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House</a>
+          <span class="footer-link-separator" role="none">|</span>
+          <a class="footer-credit-link" href="https://unsplash.com/photos/Ev7rewOS5vo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Photo of Sydney Opera House with projected ornaments on it</a>
+        </section>
+      </div>
     </footer>
+    <script src="./source/js/script.js"></script>
+  </body>
 </html>
