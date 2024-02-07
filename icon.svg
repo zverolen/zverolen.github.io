@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+  <style>
+     @media (prefers-color-scheme: dark) {
+      .blue {
+        fill: #D5C4FF;
+      }
+      .frame {
+        stroke: #FAFAFA;
+      }
+     }
+  </style>
+  <path fill="#d3715c" d="M0 3h8v8H0z" class="red"/>
+  <path fill="#6299a6" d="M6 7h10v8.566H6z" class="blue" style="stroke-width:1.03477"/>
+  <path stroke="#424242" d="M4.5 1.716h7v7h-7z" class="frame"/>
+</svg>
