@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><style>@media (prefers-color-scheme:dark){.icon{fill:#212121;stroke:#fafafa}}</style><path fill="#FAFAFA" stroke="#212121" stroke-width="96.533" d="M48.267 48.267h415.467v415.467H48.267z" class="icon"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none">
+  <style>
+     @media (prefers-color-scheme: dark) {
+      .blue {
+        fill: #D5C4FF;
+      }
+      .frame {
+        stroke: #FAFAFA;
+      }
+     }
+  </style>
+  <path fill="#d3715c" d="M0 3h8v8H0z" class="red"/>
+  <path fill="#6299a6" d="M6 7h10v8.566H6z" class="blue" style="stroke-width:1.03477"/>
+  <path stroke="#424242" d="M4.5 1.716h7v7h-7z" class="frame"/>
+</svg>
