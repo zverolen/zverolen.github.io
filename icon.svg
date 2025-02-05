@@ -2,10 +2,11 @@
   <style>
      @media (prefers-color-scheme: dark) {
       .blue {
-        fill: #D5C4FF;
+        fill: #6FA25F;
       }
-      .frame {
-        stroke: #FAFAFA;
+
+      .red {
+        fill: #CD8C5E;
       }
      }
   </style>
