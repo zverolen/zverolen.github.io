@@ -1,0 +1,396 @@
+@layer reset, tokens, general, specific, states, theme.light, theme.dark, overrides;
+
+@import url("./reset.css") layer(reset);
+@import url("./tokens.css") layer(tokens);
+
+@layer overrides {
+  /* Visually hidden elements are visible to screen readers */
+  .visually-hidden {
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  @layer theme.light {
+    :root {
+      --site-text-color: var(--colorPrimary);
+      --site-background-color: var(--colorSecondary);
+
+      --header-text-color: var(--colorPrimaryInverted);
+      --header-background-color: var(--colorSecondaryInverted);
+
+      --default-card-background-color: var(--colorTertiary);
+      --accent-card-background-color: var(--colorAccent);
+
+      --footer-text-color: var(--colorAccent);
+    }
+
+    body {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color)
+    }
+
+    header {
+      --text-color: var(--site-background-color);
+      --background-color: var(--site-text-color);
+    }
+
+    #beers li {
+      --background-color: var(--default-card-background-color);
+      --border-color: var(--site-background-color);
+    }
+
+    #contact > div {
+      --background-color: var(--default-card-background-color);
+      --border-color: var(--site-background-color);
+    }
+
+    #events li {
+      --text-color: var(--site-text-color);
+      --background-color: var(--accent-card-background-color);
+    }
+
+    footer {
+      --text-color: var(--accent-card-background-color);
+      --background-color: var(--site-text-color);
+      --border-color: var(--site-background-color);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @layer theme.dark {
+    :root {
+      --site-text-color: var(--colorPrimaryInverted);
+      --site-background-color: var(--colorSecondaryInverted);
+
+      --accent-card-background-color: var(--colorAccent);
+    }
+
+    body {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color)
+    }
+
+    header {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color);
+    }
+
+    #beers li {
+      --background-color: var(--site-background-color);
+      --border-color: var(--site-text-color);
+    }
+
+    #contact > div {
+      --background-color: var(--site-background-color);
+      --border-color: var(--site-text-color);
+    }
+
+    #events li {
+      --text-color: var(--site-background-color);
+      --background-color: var(--accent-card-background-color);
+    }
+
+    footer {
+      --text-color: var(--site-text-color);
+      --background-color: var(--site-background-color);
+      --border-color: var(--site-text-color);
+    }
+  }
+}
+
+@layer general {
+  body {
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
+    letter-spacing: var(--text-letter-spacing);
+    overflow-wrap: var(--text-overflow-wrap);
+    hyphens: var(--text-hyphens);
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  h1, h2, h3, h4 {
+    text-transform: var(--heading-text-transform);
+  }
+
+  h2:not(footer h2), h1 {
+    max-width: var(--heading-width);
+    margin-block:var(--heading-margin-block);
+    margin-inline: var(--heading-margin-inline);
+
+    font-size: var(--heading-font-size);
+    text-align: var(--heading-text-align);
+  }
+
+  h3, footer h2 {
+    font-size: var(--subheading-font-size);
+  }
+
+  h3 {
+    margin-block-end: var(--subheading-margin-bottom);
+  }
+
+  footer h2 {
+    margin-block-end: var(--footer-subheading-margin-bottom);
+  }
+
+  a {
+    padding-block: var(--link-vertical-padding);
+
+    /* For transtion */
+    outline: var(--outlineOnFocus) solid var(--background-color);
+    border-radius: var(--link-border-radius);
+    border: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    a {
+      transition: var(--common-transition);
+    }
+
+    header a, footer a {
+      transition-duration: var(--speed-0);
+    }
+  }
+
+  section:not(:first-of-type):not(:nth-of-type(3)) {
+    width: var(--content-width);
+    margin-inline: var(--content-margin);
+  }
+
+  header {
+    font-size: var(--header-font-size);
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  header > div {
+    display: var(--header-layout);
+    justify-content: var(--header-justify-content);
+    align-items: var(--header-align-items);
+    gap: var(--header-gap);
+    flex-wrap: var(--header-wrap);
+
+    width: var(--header-width);
+    margin-inline: var(--header-margin);
+    padding-block: var(--header-padding);
+  }
+
+  header img {
+    width: var(--logo-width);
+  }
+
+  nav {
+    display: var(--nav-layout);
+    gap: var(--nav-gap);
+  }
+
+  .oxygen {
+    position: var(--oxygen-position);
+    left: var(--oxygen-left);
+  }
+  
+  .oxygen span {
+    position: var(--oxygen-number-position);
+    
+    bottom: var(--oxygen-number-bottom);
+    left: var(--oxygen-number-left);
+  
+    font-size: var(--oxygen-number-font-size);
+  }
+
+  #beers ul {
+    display: var(--beers-layout);
+    grid-template-columns: var(--beers-columns);
+    gap: var(--beers-gap);
+  }
+
+  #beers li {
+    container-type: var(--beer-card-container-type);
+
+    display: var(--beer-card-layout);
+    gap: var(--beer-card-gap);
+    align-items: var(--beer-card-align-items);
+
+    padding: var(--beer-card-padding);
+
+    background-color: var(--background-color);
+
+    border: var(--borderWidth) solid var(--border-color);
+    border-radius: var(--beer-card-border-radius);
+    box-shadow: var(--beer-card-box-shadow);
+  }
+
+  #beers li > div:first-child {
+    display: var(--beer-description-layout);
+    flex-direction: var(--beer-description-direction);
+    flex: var(--beer-description-flex);
+    gap: var(--beer-description-gap);
+  }
+
+  #beers li > div:first-child > div {
+    display: var(--beer-details-layout);
+    flex-direction: var(--beers-details-directiond);
+    gap: var(--beer-details-gap);
+  }
+
+  @container (max-width: calc(300 / 16 * 1rem)) {
+    #beers li > div:first-child {
+      font-size: var(--beer-description-smaller-font-size);
+    }
+  }
+
+  #beers li > div:last-child {
+    flex: var(--beer-illustration-flex);
+
+    border-radius: var(--beer-image-border-radius);
+  }
+
+  
+
+  #contact > div {
+    background-color: var(--background-color);
+    border-bottom: var(--borderWidth) solid var(--border-color);
+  }
+
+  #contact > div > div {
+    display: var(--contacts-layout);
+    justify-content: var(--contacts-justify-content);
+    flex-wrap: var(--contacts-flex-wrap);
+    column-gap: var(--contacts-column-gap);
+    row-gap: var(--contacts-row-gap);
+
+    width: var(--contacts-width);
+    margin-inline: var(--contacts-margin);
+    padding-block: var(--contacts-padding);
+  }
+
+  #contact > div > div > div:nth-child(1) {
+    flex-basis: var(--contacts-address-width);
+
+    text-align: var(--contacts-address-text-align);
+  }
+
+  #contact > div > div > div:nth-child(1) h3 {
+    margin-block-end: var(--contact-address-heading-margin-bottom);
+  }
+
+  #contact > div > div > div:nth-child(1) p {
+    display: var(--contacts-address-display);
+    text-transform: var(--contacts-address-text-transform);
+  }
+
+  #contact > div > div > div:not(:nth-child(1)) {
+    display: var(--contacts-phone-layout);
+    flex-direction: var(--contacts-phone-direction);
+    align-items: var(--contacts-phone-centering);
+  }
+
+  #events {
+    margin-block-end: var(--events-margin-block-end);
+  }
+
+  #events ul {
+    display: var(--events-layout);
+    grid-template-columns: var(--events-columns);
+    gap: var(--events-gap);
+  }
+
+  #events li {
+    container: event-card/inline-size;
+
+    display: var(--event-card-layout);
+    flex-wrap: var(--event-card-wrap);
+    align-content: var(--event-card-align-content);
+    gap: var(--event-card-gap);
+
+    padding: var(--event-card-padding);
+    
+    color: var(--text-color);
+    background-color: var(--background-color); 
+
+    border-radius: var(--event-card-border-radius);
+    box-shadow: var(--event-card-box-shadow);
+  }
+
+  @container event-card (max-width: calc(300 / 16 * 1rem)) {
+    #events li > div {
+      font-size: var(--event-card-smaller-font-size);
+    }
+  }
+
+  #events li > div:first-child {
+    flex-grow: var(--event-card-img-grow);
+    flex-basis: var(--event-card-img-width);
+  }
+
+  #events li > div:last-child {
+    flex-grow: var(--event-card-description-grow);
+    flex-basis: var(--event-card-description-width);
+  }
+
+  #events img {
+    border-radius: var(--event-card-image-border-radius);
+  }
+
+  #events h3 {
+    margin-block-end: var(--event-card-name-margin);
+  }
+
+  #events h3 + div {
+    margin-block-end: var(--event-card-date-margin);
+    font-style: var(--event-card-date-font-style);
+  }
+
+  #events a {
+    display: var(--event-card-display);
+    margin-block-start: var(--event-card-margin);
+  }
+
+  footer {
+    padding-block: var(--footer-padding);
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+    border-top: var(--borderWidth) solid var(--border-color);
+  }
+
+  footer > div {
+    width: var(--content-width);
+    margin-inline: var(--content-margin);
+  }
+
+  footer a {
+    display: var(--footer-link-display);
+    margin-inline-end: var(--footer-link-margin);
+  }
+}
+
+@layer states {
+  a:hover {
+    cursor: var(--link-cursor);
+  }
+
+  a:hover, a:focus-visible {
+    position: relative;
+
+    outline: var(--outlineOnFocus) solid var(--background-color);
+    box-shadow: 0 0 0 var(--shadowOnFocus) var(--text-color);
+  }
+
+  footer a:hover, header a:hover, footer a:focus-visible, header a:focus-visible {
+    transition-duration: var(--speed-II);
+  }
+}
